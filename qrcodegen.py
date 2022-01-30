@@ -34,7 +34,7 @@ right_layer = tk.Label(root)
 right_layer.grid(rowspan=7, column=5, row=0)
 
 #logo space
-logo = Image.open('FSRGruppe.png')
+logo = Image.open('logo.jpg')
 logo.thumbnail([80,80])
 logo = ImageTk.PhotoImage(logo)
 logo_label =tk.Label(image=logo)
@@ -46,8 +46,8 @@ title = tk.Label(root, text="QRCode-Gen")
 title.grid(columnspan=4, column=1, row=0)
 
 #instructions
-instructions = tk.Label(root, text="""QR-Code Generator by Thiemo für die ADW
-Schnell und schmutzig...
+instructions = tk.Label(root, text="""QR-Code Generator by Thiemo for personal, local use
+quick and dirty...
 Paste a URL to create a QR code locally
 2021""")
 instructions.grid(columnspan=3, column=2, row=1)
